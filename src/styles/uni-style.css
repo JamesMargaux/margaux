@@ -1,0 +1,42 @@
+/* general */
+@font-face {
+  font-family: 'zeldaregular';
+  src: url('../assets/fonts/zelda_free-webfont.woff2') format('woff2'),
+       url('../assets/fonts/zelda_free-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-family: 'Poppins', Helvetica, sans-serif;
+  font-size: 62.5%;
+  height: 100%;
+  /* color variables */
+  --surface-color: #fff;
+
+  /* transition variables*/
+  --transition-duration: 300ms ease;
+}
+body{
+  height: 100%;
+  background: rgb(11,16,38);
+  background: linear-gradient(0deg, rgba(11,16,38,1) 0%, rgba(6,29,55,1) 100%);
+}
+
+/* layout */
+.flex{
+  display: flex;
+}
+
+/* hover effects */
+.hover-fade{
+  transition: var(--transition-duration);
+}
+.hover-fade:hover{
+  opacity: 0.5;
+}

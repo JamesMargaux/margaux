@@ -1,0 +1,12 @@
+.section-header__lead > ul{
+  display: none;
+}
+.section-header__lead > ul.linklist{
+  display: block;
+}
+.section-header__lead > a{
+  display: none;
+}
+.section-header__lead > a.link{
+  display: inline-block;
+}
