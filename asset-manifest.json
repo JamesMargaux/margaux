@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/margaux/static/css/main.a1ef1993.chunk.css",
-    "main.js": "/margaux/static/js/main.01ccb556.chunk.js",
-    "main.js.map": "/margaux/static/js/main.01ccb556.chunk.js.map",
+    "main.js": "/margaux/static/js/main.59e0faa5.chunk.js",
+    "main.js.map": "/margaux/static/js/main.59e0faa5.chunk.js.map",
     "runtime-main.js": "/margaux/static/js/runtime-main.eca5e223.js",
     "runtime-main.js.map": "/margaux/static/js/runtime-main.eca5e223.js.map",
     "static/js/2.7c0f8ce4.chunk.js": "/margaux/static/js/2.7c0f8ce4.chunk.js",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.eca5e223.js",
     "static/js/2.7c0f8ce4.chunk.js",
     "static/css/main.a1ef1993.chunk.css",
-    "static/js/main.01ccb556.chunk.js"
+    "static/js/main.59e0faa5.chunk.js"
   ]
 }
