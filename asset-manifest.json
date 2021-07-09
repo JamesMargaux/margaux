@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/margaux/static/css/main.a1ef1993.chunk.css",
-    "main.js": "/margaux/static/js/main.6ccc6fce.chunk.js",
-    "main.js.map": "/margaux/static/js/main.6ccc6fce.chunk.js.map",
+    "main.js": "/margaux/static/js/main.23087804.chunk.js",
+    "main.js.map": "/margaux/static/js/main.23087804.chunk.js.map",
     "runtime-main.js": "/margaux/static/js/runtime-main.eca5e223.js",
     "runtime-main.js.map": "/margaux/static/js/runtime-main.eca5e223.js.map",
-    "static/js/2.7c0f8ce4.chunk.js": "/margaux/static/js/2.7c0f8ce4.chunk.js",
-    "static/js/2.7c0f8ce4.chunk.js.map": "/margaux/static/js/2.7c0f8ce4.chunk.js.map",
+    "static/js/2.f836a9ea.chunk.js": "/margaux/static/js/2.f836a9ea.chunk.js",
+    "static/js/2.f836a9ea.chunk.js.map": "/margaux/static/js/2.f836a9ea.chunk.js.map",
     "static/js/3.40fbda39.chunk.js": "/margaux/static/js/3.40fbda39.chunk.js",
     "static/js/3.40fbda39.chunk.js.map": "/margaux/static/js/3.40fbda39.chunk.js.map",
     "index.html": "/margaux/index.html",
     "static/css/main.a1ef1993.chunk.css.map": "/margaux/static/css/main.a1ef1993.chunk.css.map",
-    "static/js/2.7c0f8ce4.chunk.js.LICENSE.txt": "/margaux/static/js/2.7c0f8ce4.chunk.js.LICENSE.txt",
+    "static/js/2.f836a9ea.chunk.js.LICENSE.txt": "/margaux/static/js/2.f836a9ea.chunk.js.LICENSE.txt",
     "static/media/contact-img.11b001c2.jpg": "/margaux/static/media/contact-img.11b001c2.jpg",
     "static/media/profile.9a12a653.jpg": "/margaux/static/media/profile.9a12a653.jpg",
     "static/media/pylon-with-bg.d8cbcabd.svg": "/margaux/static/media/pylon-with-bg.d8cbcabd.svg",
@@ -21,8 +21,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.eca5e223.js",
-    "static/js/2.7c0f8ce4.chunk.js",
+    "static/js/2.f836a9ea.chunk.js",
     "static/css/main.a1ef1993.chunk.css",
-    "static/js/main.6ccc6fce.chunk.js"
+    "static/js/main.23087804.chunk.js"
   ]
 }
