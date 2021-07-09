@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/margaux/static/css/main.a1ef1993.chunk.css",
+    "main.js": "/margaux/static/js/main.01ccb556.chunk.js",
+    "main.js.map": "/margaux/static/js/main.01ccb556.chunk.js.map",
+    "runtime-main.js": "/margaux/static/js/runtime-main.eca5e223.js",
+    "runtime-main.js.map": "/margaux/static/js/runtime-main.eca5e223.js.map",
+    "static/js/2.7c0f8ce4.chunk.js": "/margaux/static/js/2.7c0f8ce4.chunk.js",
+    "static/js/2.7c0f8ce4.chunk.js.map": "/margaux/static/js/2.7c0f8ce4.chunk.js.map",
+    "static/js/3.40fbda39.chunk.js": "/margaux/static/js/3.40fbda39.chunk.js",
+    "static/js/3.40fbda39.chunk.js.map": "/margaux/static/js/3.40fbda39.chunk.js.map",
+    "index.html": "/margaux/index.html",
+    "static/css/main.a1ef1993.chunk.css.map": "/margaux/static/css/main.a1ef1993.chunk.css.map",
+    "static/js/2.7c0f8ce4.chunk.js.LICENSE.txt": "/margaux/static/js/2.7c0f8ce4.chunk.js.LICENSE.txt",
+    "static/media/contact-img.11b001c2.jpg": "/margaux/static/media/contact-img.11b001c2.jpg",
+    "static/media/profile.9a12a653.jpg": "/margaux/static/media/profile.9a12a653.jpg",
+    "static/media/pylon-with-bg.d8cbcabd.svg": "/margaux/static/media/pylon-with-bg.d8cbcabd.svg",
+    "static/media/technologies.566df579.png": "/margaux/static/media/technologies.566df579.png",
+    "static/media/web-dev.74f7ff06.jpg": "/margaux/static/media/web-dev.74f7ff06.jpg",
+    "static/media/uni-style.css": "/margaux/static/media/zelda_free-webfont.45a8d423.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eca5e223.js",
+    "static/js/2.7c0f8ce4.chunk.js",
+    "static/css/main.a1ef1993.chunk.css",
+    "static/js/main.01ccb556.chunk.js"
+  ]
+}
