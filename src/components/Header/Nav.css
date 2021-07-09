@@ -1,3 +1,68 @@
 .global-nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 100vw;
+  transition: height var(--transition-duration);
+  background: rgb(6,29,55);
+  background: linear-gradient(270deg, rgba(6,29,55,1) 0%, rgba(16,40,73,1) 20%, rgba(53,71,95,1) 40%, rgba(36,43,75,1) 60%, rgba(22,27,54,1) 80%, rgba(11,16,38,1) 100%);
+}
+.global-nav.active{
+  height: 100vh;
+}
+
+.global-nav ul{
+  height: 100%;
+  justify-content: center
+}
+.global-nav li{
+  display: flex;
+  justify-content: center;
+}
+
+.global-nav li+li{
+  margin-top: 2.4rem;
+}
+
+.global-nav li:last-child > *+*{
+  margin-left: 2.8rem;
+}
+
+.global-nav a{
+  transition: opacity var(--transition-duration),
+   color var(--transition-duration);
+  font-size: 3.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: var(--surface-color);
+  visibility: hidden;
+  opacity: 0;
   display: none;
+}
+.global-nav svg{
+  fill: var(--surface-color);
+}
+
+.global-nav.active a{
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.3s, 0s!important;
+}
+
+@media (min-width:420px) {
+  .global-nav li:last-child{
+    display: none;
+  }
+  .global-nav a{
+    font-size: 6.4rem;
+  }
+}
+
+@media (min-width:800px){
+  .global-nav a{
+    font-size: 10rem;
+  }
 }

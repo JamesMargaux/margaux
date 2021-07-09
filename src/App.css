@@ -1,0 +1,10 @@
+.background{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(11,16,38);
+  background: linear-gradient(0deg, rgba(11,16,38,1) 0%, rgba(6,29,55,1) 100%);
+  z-index: -24;
+}

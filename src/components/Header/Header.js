@@ -1,10 +1,20 @@
+import { useState } from 'react'
 import './Header.css'
 import Nav from './Nav'
 
 const Header = ({linksList}) => {
+  let [icon, setIcon] = useState('')
+  const isActive = (e)=>{
+    if(icon == 'active'){
+      setIcon('')
+    }
+    else{
+      setIcon('active')
+    }
+  }
   return (
     <header>
-    <a href="index.html" className="logo hover-fade">Margaux</a>
+    <a href="/" className="logo hover-fade">Margaux</a>
     <div className="wrapper flex">
       <div className="icons-con flex">
         <a href={linksList[0]} target="_blank" className="hover-fade">
@@ -30,13 +40,13 @@ const Header = ({linksList}) => {
           </span>
         </a>
       </div>
-      <div className="hamburger-icon">
+      <div className={"hamburger-icon " + icon} onClick={isActive}> {/* active */}
         <span></span>
         <span></span>
         <span></span>
       </div>
     </div>
-    <Nav />
+    <Nav linksList={linksList} show={icon} isActive={isActive}/>
     </header>
   )
 }

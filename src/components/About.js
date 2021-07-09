@@ -1,35 +1,70 @@
-import './Section.css'
+import { Link } from 'react-router-dom'
+import './Main/Main.css'
+import './About.css'
 
-const Section = ({ sectionData }) => {
-  //check if null
-  if(sectionData.listLink){
-    let linkList = sectionData.listLink
-  }
+const About = (props) => {
   return (
-    <section id={sectionData.id}>
+    <main>
+      <section className="aboutPage">
         <div className="section-header">
-          <h1 className="section-header__title">{sectionData.title}</h1>
+          <Link to="/">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M45.0133 7.68C44.7037 7.36958 44.3358 7.12329 43.9309 6.95525C43.5259 6.78721 43.0918 6.70071 42.6533 6.70071C42.2149 6.70071 41.7807 6.78721 41.3758 6.95525C40.9708 7.12329 40.603 7.36958 40.2933 7.68L17.8666 30.1067C17.6194 30.3534 17.4233 30.6464 17.2895 30.969C17.1557 31.2916 17.0868 31.6374 17.0868 31.9867C17.0868 32.3359 17.1557 32.6817 17.2895 33.0043C17.4233 33.3269 17.6194 33.62 17.8666 33.8667L40.2933 56.2933C41.6 57.6 43.7066 57.6 45.0133 56.2933C46.32 54.9867 46.32 52.88 45.0133 51.5733L25.44 32L45.04 12.4C46.32 11.0933 46.32 8.98667 45.0133 7.68V7.68Z" />
+            </svg>
+          </Link>
+          <h1 className="section-header__title">About Me</h1>
           <div className="section-header__lines">
             <span></span>
             <span></span>
           </div>
           <div className="section-header__lead">
-            <p>{sectionData.lead_p}</p>
-            <a href={sectionData.link} className={"btn " + sectionData.isLink} target={sectionData.id == 'home-works' ? '_blank' : ''}>Show me more</a>
-            <ul className={sectionData.isLinkList}>
-              <li><a href={'mailto:' + sectionData.mail}>{sectionData.email}</a></li>
+            <p>An aspiring Web Developer who loves Technology</p>
+          </div>
+        </div>
+        <a>
+          <img src='./images/web-dev.jpg' alt="Web Dev" />
+        </a>
+      </section>
+      <section className="aboutPage">
+        <div className="about-section-header">
+          <h1 className="about-section-header__title">Margaux Padiwan</h1>
+          <div className="about-section-header__lead">
+            <p>Born in Quezon City in 1999. I started my web development journey back in 2016, and currently working as a front end developer.</p>
+          </div>
+        </div>
+        <a className="about-img-con">
+          <img src='./images/profile.jpg' alt="Web Dev" />
+        </a>
+      </section>
+      <section className="aboutPage">
+        <div className="about-section-header">
+          <h1 className="about-section-header__title">Technologies</h1>
+        </div>
+        <div className="tech-con">
+          <img srcset="./images/technologies-mobile.png 480w,
+             ./images/technologies.png 800w"
+            sizes="(max-width: 600px) 480px,
+            800px"
+            src="./images/technologies.png"
+            alt="html css js sass git react dart flutter node" />
+          {/* <img src="./images/technologies.png" alt="" /> */}
+        </div>
+      </section>
+      <footer>
+      <ul>
+              <li><a href='mailto:margaux.padiwan23@gmail.com'>margaux.padiwan23@gmail.com</a></li>
               <li className="flex">
-                <a href={sectionData.listLink != null ?sectionData.listLink[0] : ''}>
+                <a href='https://github.com/JamesMargaux'>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M12 1C5.9225 1 1 5.9225 1 12C1 16.8675 4.14875 20.9787 8.52125 22.4362C9.07125 22.5325 9.2775 22.2025 9.2775 21.9137C9.2775 21.6525 9.26375 20.7862 9.26375 19.865C6.5 20.3737 5.785 19.1912 5.565 18.5725C5.44125 18.2562 4.905 17.28 4.4375 17.0187C4.0525 16.8125 3.5025 16.3037 4.42375 16.29C5.29 16.2762 5.90875 17.0875 6.115 17.4175C7.105 19.0812 8.68625 18.6137 9.31875 18.325C9.415 17.61 9.70375 17.1287 10.02 16.8537C7.5725 16.5787 5.015 15.63 5.015 11.4225C5.015 10.2262 5.44125 9.23625 6.1425 8.46625C6.0325 8.19125 5.6475 7.06375 6.2525 5.55125C6.2525 5.55125 7.17375 5.2625 9.2775 6.67875C10.1575 6.43125 11.0925 6.3075 12.0275 6.3075C12.9625 6.3075 13.8975 6.43125 14.7775 6.67875C16.8813 5.24875 17.8025 5.55125 17.8025 5.55125C18.4075 7.06375 18.0225 8.19125 17.9125 8.46625C18.6138 9.23625 19.04 10.2125 19.04 11.4225C19.04 15.6437 16.4688 16.5787 14.0213 16.8537C14.42 17.1975 14.7638 17.8575 14.7638 18.8887C14.7638 20.36 14.75 21.5425 14.75 21.9137C14.75 22.2025 14.9563 22.5462 15.5063 22.4362C17.6899 21.699 19.5874 20.2955 20.9317 18.4234C22.276 16.5513 22.9993 14.3048 23 12C23 5.9225 18.0775 1 12 1Z"/>
                   </svg>
                 </a>
-                <a href={sectionData.listLink != null ?sectionData.listLink[1] : ''}>
+                <a href='https://ph.linkedin.com'>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" clipRule="evenodd" d="M1 2.838C1 2.35053 1.19365 1.88303 1.53834 1.53834C1.88303 1.19365 2.35053 1 2.838 1H21.16C21.4016 0.999608 21.6409 1.04687 21.8641 1.13907C22.0874 1.23127 22.2903 1.36661 22.4612 1.53734C22.6322 1.70807 22.7677 1.91083 22.8602 2.13401C22.9526 2.3572 23.0001 2.59643 23 2.838V21.16C23.0003 21.4016 22.9529 21.6409 22.8606 21.8642C22.7683 22.0875 22.6328 22.2904 22.462 22.4613C22.2912 22.6322 22.0884 22.7678 21.8651 22.8602C21.6419 22.9526 21.4026 23.0001 21.161 23H2.838C2.59655 23 2.35746 22.9524 2.1344 22.86C1.91134 22.7676 1.70867 22.6321 1.53798 22.4613C1.3673 22.2905 1.23193 22.0878 1.13962 21.8647C1.04731 21.6416 0.999869 21.4025 1 21.161V2.838ZM9.708 9.388H12.687V10.884C13.117 10.024 14.217 9.25 15.87 9.25C19.039 9.25 19.79 10.963 19.79 14.106V19.928H16.583V14.822C16.583 13.032 16.153 12.022 15.061 12.022C13.546 12.022 12.916 13.111 12.916 14.822V19.928H9.708V9.388ZM4.208 19.791H7.416V9.25H4.208V19.79V19.791ZM7.875 5.812C7.88105 6.08667 7.83217 6.35979 7.73124 6.61532C7.63031 6.87084 7.47935 7.10364 7.28723 7.30003C7.09511 7.49643 6.8657 7.65248 6.61246 7.75901C6.35921 7.86554 6.08724 7.92042 5.8125 7.92042C5.53776 7.92042 5.26579 7.86554 5.01255 7.75901C4.7593 7.65248 4.52989 7.49643 4.33777 7.30003C4.14565 7.10364 3.99469 6.87084 3.89376 6.61532C3.79283 6.35979 3.74395 6.08667 3.75 5.812C3.76187 5.27286 3.98439 4.75979 4.36989 4.38269C4.75539 4.00558 5.27322 3.79442 5.8125 3.79442C6.35178 3.79442 6.86961 4.00558 7.25512 4.38269C7.64062 4.75979 7.86313 5.27286 7.875 5.812V5.812Z"/>
                   </svg>
                 </a>
-                <a href={sectionData.listLink != null ?sectionData.listLink[2] : ''}>
+                <a href='https://www.fiverr.com'>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 20.8C14.3339 20.8 16.5722 19.8729 18.2225 18.2225C19.8729 16.5722 20.8 14.3339 20.8 12C20.8 9.66609 19.8729 7.42778 18.2225 5.77746C16.5722 4.12714 14.3339 3.2 12 3.2C9.66609 3.2 7.42778 4.12714 5.77746 5.77746C4.12714 7.42778 3.2 9.66609 3.2 12C3.2 14.3339 4.12714 16.5722 5.77746 18.2225C7.42778 19.8729 9.66609 20.8 12 20.8V20.8ZM12 23C5.9247 23 1 18.0753 1 12C1 5.9247 5.9247 1 12 1C18.0753 1 23 5.9247 23 12C23 18.0753 18.0753 23 12 23Z"/>
                   <path d="M15.7695 15.4629V9.96289H10.2695V9.61969C10.2695 9.05099 10.7315 8.58789 11.3013 8.58789H12.332V6.52539H11.3013C10.4809 6.52626 9.6944 6.85255 9.1143 7.43265C8.53419 8.01276 8.2079 8.7993 8.20703 9.61969V9.96289H6.83203V12.0254H8.20703V15.4629H6.83203V17.5254H11.6445V15.4629H10.2695V12.0254H13.7268V15.4629H12.332V17.5254H17.1445V15.4629H15.7695Z"/>
@@ -38,13 +73,9 @@ const Section = ({ sectionData }) => {
                 </a>
               </li>
             </ul>
-          </div>
-        </div>
-        <a href={sectionData.link}>
-          <img src={sectionData.image_src} alt="Web Dev" />
-        </a>
-      </section>
+      </footer>
+    </main>
   )
 }
 
-export default Section
+export default About
